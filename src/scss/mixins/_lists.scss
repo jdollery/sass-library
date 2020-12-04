@@ -1,0 +1,32 @@
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+
+    &:before {
+      display: none;
+    }
+    
+  }
+
+}
+
+@mixin list-inline {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+
+    &:before {
+      display: none;
+    }
+
+    &:not(:last-child) {
+      margin-right: $list-inline-padding;
+    }
+
+  }
+  
+}
