@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------------*/
-/* MIXINS */
+/* GRID MIXINS */
 /*-----------------------------------------------------------------------------------*/
 
 @mixin cell-row {
@@ -61,12 +61,6 @@
 
 @mixin cell-fluid {
   @include cell;
-
-  @include media-up(sm) {
-    padding-right: $gutter-wide;
-    padding-left: $gutter-wide;
-  } 
-
 }
 
 

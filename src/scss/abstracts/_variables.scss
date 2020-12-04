@@ -1,0 +1,291 @@
+/*-----------------------------------------------------------------------------------*/
+/* COLOR */
+/*-----------------------------------------------------------------------------------*/
+
+$color-white:         #fefefe;
+$color-grey-100:      #f8f9fa;
+$color-grey-200:      #e9ecef;
+$color-grey-300:      #dee2e6;
+$color-grey-400:      #ced4da;
+$color-grey-500:      #8c8c8c;
+$color-grey-600:      #6c757d;
+$color-grey-700:      #495057;
+$color-grey-800:      #343a40;
+$color-grey-900:      #212529; 
+$color-black:         #0C090C;
+
+$color-brand:         #6929c4;
+$color-danger:        #dc3545;
+$color-warning:       #f2ab10;
+$color-success:       #42be65;
+
+
+/*-----------------------------------------------------------------------------------*/
+/* GRID VARIABLES */
+/*-----------------------------------------------------------------------------------*/
+
+$gutter: 15px;
+$columns: 12;
+
+$breakpoint-widths: (
+  xs: 640px,
+  sm: 768px,
+  md: 1024px,
+  lg: 1280px,
+  xl: 1536px
+);
+
+$cell-fixed-max-widths: (
+  xs: 640px,
+  sm: 768px,
+  md: 1024px,
+  lg: 1280px,
+  xl: 1536px
+);
+
+
+/*-----------------------------------------------------------------------------------*/
+/* FONT VARIABLES */
+/*-----------------------------------------------------------------------------------*/
+
+/* --------------------- FONT FAMILIES --------------------- */
+
+$roboto:      'Roboto', arial, sans-serif;
+// $fontawesome: 'FontAwesome';
+
+
+/* --------------------- FONT WEIGHTS --------------------- */
+
+$weight-thin:       100;
+$weight-light:      300;
+$weight-regular:    400;
+$weight-medium:     500;
+$weight-semibold:   600;
+$weight-bold:       700;
+$weight-extrabold:  800;
+$weight-black:      900;
+
+
+/*-----------------------------------------------------------------------------------*/
+/* BODY VARIABLES */
+/*-----------------------------------------------------------------------------------*/
+
+$body-font:           arial, sans-serif;
+$body-font-size:      17px;
+$body-line-height:    1.6;
+$body-font-weight:    $weight-regular;
+$body-color:          $color-grey-900;
+$body-background:     $color-grey-100;
+
+
+/*-----------------------------------------------------------------------------------*/
+/* PARAGRAPH VARIABLES */
+/*-----------------------------------------------------------------------------------*/
+
+$paragraph-margin-top-lg:     20px;
+$paragraph-margin-bottom-lg:  20px;
+$paragraph-margin-top-sm:     15px;
+$paragraph-margin-bottom-sm:  15px;
+
+
+/*-----------------------------------------------------------------------------------*/
+/* LINK VARIABLES */
+/*-----------------------------------------------------------------------------------*/
+
+$link-color:              lighten($body-color, 20%);
+$link-decoration:         underline;
+$link-weight:             $body-font-weight;
+$link-hover-color:        $color-black;
+$link-hover-decoration:   underline;
+$link-focus-outline:      1px dotted $color-grey-500;
+
+
+/*-----------------------------------------------------------------------------------*/
+/* HEADER VARIABLES */
+/*-----------------------------------------------------------------------------------*/
+
+$header-font:               $body-font;
+$header-line-height:        1.3;
+$header-font-weight:        $weight-bold;
+$header-color:              $body-color;
+$header-margin-top-lg:      20px;
+$header-margin-bottom-lg:   20px;
+$header-margin-top-sm:      15px;
+$header-margin-bottom-sm:   15px;
+
+$header-1-font-size:        50px;
+$header-2-font-size:        40px;
+$header-3-font-size:        30px;
+$header-4-font-size:        20px;
+$header-5-font-size:        18px;
+$header-6-font-size:        $body-font-size;
+
+
+/*-----------------------------------------------------------------------------------*/
+/* LIST VARIABLES */
+/*-----------------------------------------------------------------------------------*/
+
+$list-margin-top-lg:      $paragraph-margin-top-lg;
+$list-margin-bottom-lg:   $paragraph-margin-top-lg;
+$list-margin-top-sm:      $paragraph-margin-top-sm;
+$list-margin-bottom-sm:   $paragraph-margin-top-sm;
+
+$list-indent:             25px;
+$list-bullet-size:        5px;
+$list-bullet-color:       $color-grey-600;
+
+$list-inline-padding:     15px;
+
+
+/*-----------------------------------------------------------------------------------*/
+/* BUTTON VARIABLES */
+/*-----------------------------------------------------------------------------------*/
+
+$button-font-lg:                         $body-font-size;
+$button-font-sm:                         $body-font-size;
+$button-line-height:                     1.2;
+$button-font-weight:                     $weight-medium;
+
+$button-border-width:                    2px;
+$button-border-style:                    solid;
+$button-border-radius:                   5px;
+
+$button-padding-top-lg:                  14px;
+$button-padding-right-lg:                18px;
+$button-padding-bottom-lg:               13px;
+$button-padding-left-lg:                 18px;
+
+$button-padding-top-sm:                  13px;
+$button-padding-right-sm:                16px;
+$button-padding-bottom-sm:               12px;
+$button-padding-left-sm:                 16px;
+
+$button-margin-top-lg:                   4px;
+$button-margin-bottom-lg:                4px;
+$button-margin-top-sm:                   4px;
+$button-margin-bottom-sm:                4px;
+
+$button-disabled-color:                  $color-grey-400;
+$button-hover-percentage:                20%;
+
+$button-outlined-color:                  $color-brand;
+$button-outlined-color-hover:            $color-grey-100;
+$button-outlined-color-disabled:         $button-disabled-color;
+
+$button-outlined-background:             transparent;
+$button-outlined-background-hover:       darken($button-outlined-color, $button-hover-percentage);
+$button-outlined-background-disabled:    transparent;
+
+$button-outlined-border-color:           $button-outlined-color;
+$button-outlined-border-color-hover:     $button-outlined-background-hover;
+$button-outlined-border-color-disabled:  $button-disabled-color;
+
+$button-filled-color:                    $color-white;
+$button-filled-color-hover:              $button-filled-color;
+$button-filled-color-disabled:           $button-filled-color;
+
+$button-filled-background:               $color-brand;
+$button-filled-background-hover:         darken($button-filled-background, $button-hover-percentage);
+$button-filled-background-disabled:      $button-disabled-color;
+
+$button-filled-border-color:             $button-filled-background;
+$button-filled-border-color-hover:       $button-filled-background-hover;
+$button-filled-border-color-disabled:    $button-disabled-color;
+
+
+/*-----------------------------------------------------------------------------------*/
+/* FORM VARIABLES */
+/*-----------------------------------------------------------------------------------*/
+
+$form-margin-top-lg:             $paragraph-margin-top-lg;
+$form-margin-bottom-lg:          $paragraph-margin-bottom-lg;
+$form-margin-top-sm:             $paragraph-margin-top-sm;
+$form-margin-bottom-sm:          $paragraph-margin-bottom-sm;
+
+$input-cell-margin-bottom-lg:    15px;
+$input-cell-margin-bottom-sm:    15px;
+
+$label-font-lg:                  $button-font-lg;
+$label-font-sm:                  $button-font-sm;
+$label-line-height:              1.2;
+$label-font-weight:              $weight-medium;
+
+$label-margin-bottom-lg:         10px;
+$label-margin-bottom-sm:         8px;
+
+$input-font-lg:                  $button-font-lg;
+$input-font-sm:                  $button-font-sm;
+$input-line-height:              1.2;
+$input-font-weight:              $weight-medium;
+
+$input-border-width:             $button-border-width;
+$input-border-style:             $button-border-style;
+$input-border-radius:            $button-border-radius;
+$input-border-color:             $color-grey-400;
+$input-border-color-focus:       $color-grey-500;
+
+$input-color:                    $body-color;
+$input-placeholder-color:        $color-grey-500;
+
+$input-background:               $color-white;
+
+$input-padding-top-lg:           $button-padding-top-lg;
+$input-padding-right-lg:         $button-padding-right-lg;
+$input-padding-bottom-lg:        $button-padding-bottom-lg;
+$input-padding-left-lg:          $button-padding-left-lg;
+
+$input-padding-top-sm:           $button-padding-top-sm;
+$input-padding-right-sm:         $button-padding-right-sm;
+$input-padding-bottom-sm:        $button-padding-bottom-sm;
+$input-padding-left-sm:          $button-padding-left-sm;
+
+
+/*-----------------------------------------------------------------------------------*/
+/* TABLE VARIABLES */
+/*-----------------------------------------------------------------------------------*/
+
+$table-margin-top-lg:       $paragraph-margin-top-lg;
+$table-margin-bottom-lg:    $paragraph-margin-top-lg;
+$table-margin-top-sm:       $paragraph-margin-top-sm;
+$table-margin-bottom-sm:    $paragraph-margin-top-sm;
+
+$table-padding-top-lg:      8px;
+$table-padding-right-lg:    15px;
+$table-padding-bottom-lg:   8px;
+$table-padding-left-lg:     15px;
+
+$table-padding-top-sm:      4px;
+$table-padding-right-sm:    10px;
+$table-padding-bottom-sm:   4px;
+$table-padding-left-sm:     10px;
+
+$table-th-border-width:     1px;
+$table-th-border-style:     solid;
+$table-th-border-color:     $color-grey-500;
+
+$table-td-border-width:     0;
+$table-td-border-style:     solid;
+$table-td-border-color:     $color-grey-500;
+
+$table-th-font-weight:      $weight-bold;
+
+$table-tr-even-background:  $color-grey-200;
+$table-tr-odd-background:   transparent;
+
+
+/*-----------------------------------------------------------------------------------*/
+/* IMAGE VARIABLES */
+/*-----------------------------------------------------------------------------------*/
+
+$image-margin-top-lg:      40px;
+$image-margin-bottom-lg:   40px;
+$image-margin-top-sm:      30px;
+$image-margin-bottom-sm:   30px;
+
+
+/*-----------------------------------------------------------------------------------*/
+/* SECTION VARIABLES */
+/*-----------------------------------------------------------------------------------*/
+
+$section-padding: 60px;
+
