@@ -62,32 +62,3 @@
 @mixin cell-fluid {
   @include cell;
 }
-
-
-/*-----------------------------------------------------------------------------------*/
-/* GLOBAL CLASSES */
-/*-----------------------------------------------------------------------------------*/
-
-.content {
-  @include cell-fixed;
-
-  &__row {
-    @include cell-row;
-  }
-
-}
-
-
-.inner {
-  @include cell;
-  @include cell-span(12);
-
-  @include media-up(lg) {
-    @include cell-span(10);
-  }
-
-  &__row {
-    @include cell-row;
-  }
-
-}

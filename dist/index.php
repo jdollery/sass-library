@@ -88,8 +88,8 @@ $posts = array(
     <meta name="robots" content="noindex" />
     <title></title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
     <meta name="description" content="">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -258,7 +258,7 @@ $posts = array(
             <div class="inner">
               <div class="inner__row">
                 <?php foreach($posts as $post) { ?>
-                <article class="post">
+                <article class="item">
                   <h4><?php echo $post['title'] ?></h4>
                   <p><?php echo $post['content'] ?></p>
                   <button class="button--outlined" type="button">Learn more</button>

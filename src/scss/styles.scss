@@ -19,7 +19,7 @@
 
 // @import "utility/elfsight";
 
-// @import "partials/reset";
+@import "partials/reset";
 // @import "partials/paragraph";
 // @import "partials/headers";
 // @import "partials/links";
@@ -33,6 +33,8 @@
 // @import "layout/footer";
 // @import "layout/view";
 // @import "layout/block";
+
+@import "layout/templates";
 
 // @import "components/title";
 // @import "components/navigation";

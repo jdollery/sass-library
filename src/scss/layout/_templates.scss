@@ -1,0 +1,70 @@
+/*-----------------------------------------------------------------------------------*/
+/* GLOBAL TEMPLATES */
+/*-----------------------------------------------------------------------------------*/
+
+/* --------------------- COMPONANT CONTAINER (FIXED WIDTHS & FLEX WRAP ROW --------------------- */
+
+.content {
+  @include cell-fixed;
+
+  &__row {
+    @include cell-row;
+    @include flex-content-x(center);
+  }
+
+}
+
+
+/* --------------------- COMPONANT INNER (REDUCE WIDTH FOR DIFFERENT MEDIA & FLEX WRAP ROW --------------------- */
+
+.inner {
+  @include cell;
+  @include cell-span(12);
+
+  @include media-up(lg) {
+    @include cell-span(10);
+  }
+
+  &__row {
+    @include cell-row;
+  }
+
+}
+
+
+/* --------------------- COMPONANT INNER (REDUCE WIDTH FOR DIFFERENT MEDIA & FLEX WRAP ROW --------------------- */
+
+.item {
+  @include cell;
+  @include cell-span(12);
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @include media-up(lg) {
+    @include cell-span(4);
+  }
+
+  &__row {
+    @include cell-row;
+  }
+
+  &__media {
+
+  }
+
+  &__body {
+    position: relative;
+    width: 100%;
+    padding: 40px 40px 130px;
+  }
+
+  &__footer {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+    left: 0;
+    padding: 0 40px;
+  }
+
+}
