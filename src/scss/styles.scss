@@ -13,16 +13,15 @@
 @import "mixins/media";
 @import "mixins/grid";
 @import "mixins/block";
-// @import "mixins/lists";
 
 @import "partials/reset";
 @import "partials/paragraph";
 @import "partials/headings";
 @import "partials/links";
-// @import "partials/lists";
+@import "partials/lists";
 // @import "partials/button";
 // @import "partials/tables";
-// @import "partials/images";
+@import "partials/image";
 // @import "partials/forms";
 
 // @import "layout/header";

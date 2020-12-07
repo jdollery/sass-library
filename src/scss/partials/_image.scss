@@ -2,23 +2,24 @@
 /* VARIABLES */
 /*-----------------------------------------------------------------------------------*/
 
-$paragraph-margin-top-lg:     15px;
-$paragraph-margin-bottom-lg:  15px;
-$paragraph-margin-top-sm:     10px;
-$paragraph-margin-bottom-sm:  10px;
+$image-margin-top-lg:      40px;
+$image-margin-bottom-lg:   40px;
+$image-margin-top-sm:      20px;
+$image-margin-bottom-sm:   20px;
 
 
 /*-----------------------------------------------------------------------------------*/
 /* STYLING */
 /*-----------------------------------------------------------------------------------*/
 
-p {
-  margin-top: $paragraph-margin-top-sm;
-  margin-bottom: $paragraph-margin-bottom-sm;
+img {
+  display: block;
+  margin-top: $image-margin-top-sm;
+  margin-bottom: $image-margin-bottom-sm;
 
   @include media-up(md) {
-    margin-top: $paragraph-margin-top-lg;
-    margin-bottom: $paragraph-margin-bottom-lg;
+    margin-top: $image-margin-top-lg;
+    margin-bottom: $image-margin-bottom-lg;
   }
 
   &:first-child {

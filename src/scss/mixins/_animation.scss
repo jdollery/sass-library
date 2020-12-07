@@ -1,3 +1,7 @@
+/*-----------------------------------------------------------------------------------*/
+/* MIXINS */
+/*-----------------------------------------------------------------------------------*/
+
 @mixin animation-name ($animation-name) {
   -webkit-animation-name: $animation-name;
   -moz-animation-name: $animation-name;

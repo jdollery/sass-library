@@ -131,12 +131,12 @@ $posts = array(
               <p>Consectetur adipiscing elit</a>. In non maximus nibh. Aenean interdum faucibus nunc a ultricies. Integer ornare sapien quis nunc accumsan scelerisque. Morbi eu turpis id nibh sagittis efficitur.</p>
 
               <h4>Header 4</h4>
-              <ul>
+              <ul class="list-bullet">
                 <li>Consectetur adipiscing elit</li>
                 <li>Posuere cubilia curae</li>
               </ul>
 
-              <ol>
+              <ol class="list-number">
                 <li>Consectetur adipiscing elit</li>
                 <li>Posuere cubilia curae</li>
               </ol>

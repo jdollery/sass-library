@@ -1,6 +1,8 @@
 /*-----------------------------------------------------------------------------------*/
-/* COLOR VARIABLES */
+/* VARIABLES */
 /*-----------------------------------------------------------------------------------*/
+
+/* --------- COLOURS --------- */
 
 $color-white:         #fefefe;
 $color-grey-100:      #f8f9fa;
@@ -20,10 +22,6 @@ $color-warning:       #f2ab10;
 $color-success:       #42be65;
 
 
-/*-----------------------------------------------------------------------------------*/
-/* RESET VARIABLES */
-/*-----------------------------------------------------------------------------------*/
-
 /* --------- FONT FAMILIES --------- */
 
 $font-roboto: 'Roboto', arial, sans-serif;
@@ -33,7 +31,8 @@ $font-roboto: 'Roboto', arial, sans-serif;
 /* --------- BODY VARIABLES --------- */
 
 $body-font:           $font-roboto;
-$body-size:           17px;
+$body-size-lg:        17px;
+$body-size-sm:        15px;
 $body-line-height:    1.6;
 $body-weight:         400;
 $body-color:          $color-grey-900;
@@ -41,7 +40,7 @@ $body-background:     $color-grey-100;
 
 
 /*-----------------------------------------------------------------------------------*/
-/* RESET BROWSER STYLES */
+/* RESET BROWSER STYLING */
 /*-----------------------------------------------------------------------------------*/
 
 *,
@@ -75,7 +74,7 @@ span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, cod
 }
 
 body {
-  font-size: $body-size;
+  font-size: $body-size-sm;
   font-family: $body-font;
   line-height: $body-line-height;
   font-weight: $body-weight;
@@ -100,6 +99,11 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-size-adjust: none;
+
+  @include media-up(sm) {
+    font-size: $body-size-lg;
+  }
+
 }
 
 *:focus {
@@ -211,10 +215,6 @@ address {
 
 abbr[title] {
   text-decoration: none;
-}
-
-ol, ul {
-  list-style: none;
 }
 
 ol ol,
