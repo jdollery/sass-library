@@ -21,33 +21,21 @@ $color-success:       #42be65;
 
 
 /*-----------------------------------------------------------------------------------*/
-/* TEXT VARIABLES */
+/* RESET VARIABLES */
 /*-----------------------------------------------------------------------------------*/
-
-/* --------------------- FONT WEIGHTS --------------------- */
-
-$weight-thin:       100;
-$weight-light:      300;
-$weight-regular:    400;
-$weight-medium:     500;
-$weight-semibold:   600;
-$weight-bold:       700;
-$weight-extrabold:  800;
-$weight-black:      900;
-
 
 /* --------- FONT FAMILIES --------- */
 
-$roboto: 'Roboto', arial, sans-serif;
+$font-roboto: 'Roboto', arial, sans-serif;
 // $fontawesome: 'FontAwesome';
 
 
 /* --------- BODY VARIABLES --------- */
 
-$body-font:           arial, sans-serif;
-$body-font-size:      17px;
+$body-font:           $font-roboto;
+$body-size:           17px;
 $body-line-height:    1.6;
-$body-font-weight:    $weight-regular;
+$body-weight:         400;
 $body-color:          $color-grey-900;
 $body-background:     $color-grey-100;
 
@@ -87,10 +75,10 @@ span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, cod
 }
 
 body {
-  font-size: $body-font-size;
+  font-size: $body-size;
   font-family: $body-font;
   line-height: $body-line-height;
-  font-weight: $body-font-weight;
+  font-weight: $body-weight;
   color: $body-color;
   background-color: $body-background;
   text-align: left;
@@ -210,11 +198,11 @@ template {
 }
 
 strong {
-  font-weight: $weight-bold;
+  font-weight: 700;
 }
 
 strong > a {
-  font-weight: $weight-bold;
+  font-weight: 700;
 }
 
 address {
@@ -241,7 +229,7 @@ li {
 }
 
 dt {
-  font-weight: $weight-bold;
+  font-weight: 700;
 }
 
 dl,
