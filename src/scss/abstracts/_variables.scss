@@ -28,31 +28,33 @@ $gutter: 15px;
 $columns: 12;
 
 $breakpoint-widths: (
-  xs: 425px,
-  sm: 768px,
-  md: 1024px,
-  lg: 1200px,
-  xl: 1500px
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1500px
 );
 
 $cell-fixed-max-widths: (
-  xs: 560px,
-  sm: 710px,
-  md: 966px,
-  lg: 1140px,
-  xl: 1350px
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1350px
 );
+
+
+/*-----------------------------------------------------------------------------------*/
+/* BLOCK VARIABLES */
+/*-----------------------------------------------------------------------------------*/
+
+$block-padding-sm: 60px;
+$block-padding-lg: 150px;
 
 
 /*-----------------------------------------------------------------------------------*/
 /* FONT VARIABLES */
 /*-----------------------------------------------------------------------------------*/
-
-/* --------------------- FONT FAMILIES --------------------- */
-
-$roboto: 'Roboto', arial, sans-serif;
-// $fontawesome: 'FontAwesome';
-
 
 /* --------------------- FONT WEIGHTS --------------------- */
 
@@ -64,6 +66,12 @@ $weight-semibold:   600;
 $weight-bold:       700;
 $weight-extrabold:  800;
 $weight-black:      900;
+
+
+/* --------------------- FONT FAMILIES --------------------- */
+
+$roboto: 'Roboto', arial, sans-serif;
+// $fontawesome: 'FontAwesome';
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -281,11 +289,4 @@ $image-margin-top-lg:      40px;
 $image-margin-bottom-lg:   40px;
 $image-margin-top-sm:      30px;
 $image-margin-bottom-sm:   30px;
-
-
-/*-----------------------------------------------------------------------------------*/
-/* SECTION VARIABLES */
-/*-----------------------------------------------------------------------------------*/
-
-$section-padding: 60px;
 

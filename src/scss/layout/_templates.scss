@@ -2,7 +2,7 @@
 /* GLOBAL TEMPLATES */
 /*-----------------------------------------------------------------------------------*/
 
-/* --------------------- COMPONANT CONTAINER (FIXED WIDTHS & FLEX WRAP ROW --------------------- */
+/* --------- COMPONANT CONTENT WRAPPER (FIXED WIDTHS) --------- */
 
 .content {
   @include cell-fixed;
@@ -15,13 +15,13 @@
 }
 
 
-/* --------------------- COMPONANT INNER (REDUCE WIDTH FOR DIFFERENT MEDIA & FLEX WRAP ROW --------------------- */
+/* --------- COMPONANT CONTENT WRAPPER INNER (REDUCE CONTENT WIDTH) --------- */
 
 .inner {
   @include cell;
   @include cell-span(12);
 
-  @include media-up(lg) {
+  @include media-up(xl) {
     @include cell-span(10);
   }
 
@@ -32,13 +32,22 @@
 }
 
 
-/* --------------------- COMPONANT INNER (REDUCE WIDTH FOR DIFFERENT MEDIA & FLEX WRAP ROW --------------------- */
+/* --------- ITEM (USED FOR A LOOP OF POSTS, SERVICES ETC...) --------- */
+
+$item-padding-top: 40px;
+$item-padding-bottom: 130px;
+$item-padding-x: 40px;
+$item-background: $color-white;
 
 .item {
   @include cell;
   @include cell-span(12);
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: $gutter;
+  padding-bottom: $gutter;
+
+  @include media-up(sm) {
+    @include cell-span(6);
+  }
 
   @include media-up(lg) {
     @include cell-span(4);
@@ -49,22 +58,38 @@
   }
 
   &__media {
+    
+    figure {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 200px;
+      width: 100%;
+    }
+
+    img {
+      display: none;
+    }
 
   }
 
   &__body {
     position: relative;
-    width: 100%;
-    padding: 40px 40px 130px;
+    height: 100%;
+    background-color: $item-background;
+  }
+
+  &__text {
+    padding: $item-padding-top $item-padding-x 130px;
   }
 
   &__footer {
     display: block;
     position: absolute;
     width: 100%;
-    bottom: 40px;
+    bottom: $item-padding-x;
     left: 0;
-    padding: 0 40px;
+    padding: 0 $item-padding-x;
   }
 
 }

@@ -5,7 +5,7 @@ $posts = array(
   array(
     "title"   => "CCPA and GDPR: An Overview and Comparison of the Laws",
     "date" => "10 July 2020",
-    "img" => "https://via.placeholder.com/1080x650",
+    "media" => "https://via.placeholder.com/1080x650",
     "content" => "Phasellus sagittis ullamcorper libero a euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas",
     "url" => "/news/article",
     "filled" => true
@@ -14,7 +14,7 @@ $posts = array(
   array(
     "title"   => "EDPB guidelines: cookies, consent and compliance",
     "date" => "25 June 2020",
-    "img" => "https://via.placeholder.com/1080x650",
+    "media" => "https://via.placeholder.com/1080x650",
     "content" => "Phasellus sagittis ullamcorper libero a euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas",
     "url" => "/news/article",
     "filled" => false
@@ -23,7 +23,7 @@ $posts = array(
   array(
     "title"   => "Google Tag Manager and Automatic Cookie Blocking",
     "date" => "5 May 2020",
-    "img" => "https://via.placeholder.com/1080x650",
+    "media" => "https://via.placeholder.com/1080x650",
     "content" => "Phasellus sagittis ullamcorper libero a euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas",
     "url" => "/news/article",
     "filled" => false
@@ -32,7 +32,7 @@ $posts = array(
   array(
     "title"   => "CCPA and GDPR: An Overview and Comparison of the Laws",
     "date" => "10 July 2020",
-    "img" => "https://via.placeholder.com/1080x650",
+    "media" => "https://via.placeholder.com/1080x650",
     "content" => "Phasellus sagittis ullamcorper libero a euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas",
     "url" => "/news/article",
     "filled" => false
@@ -41,7 +41,7 @@ $posts = array(
   array(
     "title"   => "EDPB guidelines: cookies, consent and compliance",
     "date" => "25 June 2020",
-    "img" => "https://via.placeholder.com/1080x650",
+    "media" => "https://via.placeholder.com/1080x650",
     "content" => "Phasellus sagittis ullamcorper libero a euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas",
     "url" => "/news/article",
     "filled" => true
@@ -50,7 +50,7 @@ $posts = array(
   array(
     "title"   => "Google Tag Manager and Automatic Cookie Blocking",
     "date" => "5 May 2020",
-    "img" => "https://via.placeholder.com/1080x650",
+    "media" => "https://via.placeholder.com/1080x650",
     "content" => "Phasellus sagittis ullamcorper libero a euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas",
     "url" => "/news/article",
     "filled" => false
@@ -59,7 +59,7 @@ $posts = array(
   array(
     "title"   => "CCPA and GDPR: An Overview and Comparison of the Laws",
     "date" => "10 July 2020",
-    "img" => "https://via.placeholder.com/1080x650",
+    "media" => "https://via.placeholder.com/1080x650",
     "content" => "Phasellus sagittis ullamcorper libero a euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas",
     "url" => "/news/article",
     "filled" => false
@@ -68,7 +68,7 @@ $posts = array(
   array(
     "title"   => "Google Tag Manager and Automatic Cookie Blocking",
     "date" => "5 May 2020",
-    "img" => "https://via.placeholder.com/1080x650",
+    "media" => "https://via.placeholder.com/1080x650",
     "content" => "Phasellus sagittis ullamcorper libero a euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas",
     "url" => "/news/article",
     "filled" => false
@@ -180,22 +180,22 @@ $posts = array(
               </p>
 
               <button class="button--outlined" type="button">Button</button>
-              <a href="/" class="button--outlined" role="button"><span class="icon"><svg role="img"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
+              <a href="/" class="button--outlined" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
               <button class="button--outlined" type="button" disabled>Button Disabled</button>
               <a href="/" class="button--outlined button--disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
 
               <button class="button--filled" type="button">Button</button>
-              <a href="/" class="button--filled" role="button"><span class="icon"><svg role="img"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
+              <a href="/" class="button--filled" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
               <button class="button--filled" type="button" disabled>Button Disabled</button>
               <a href="/" class="button--filled button--disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
 
               <button class="button--danger" type="button">Button</button>
-              <a href="/" class="button--danger" role="button"><span class="icon"><svg role="img"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
+              <a href="/" class="button--danger" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
               <button class="button--danger" type="button" disabled>Button Disabled</button>
               <a href="/" class="button--danger button--disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
 
               <button class="button--success" type="button">Button</button>
-              <a href="/" class="button--success" role="button"><span class="icon"><svg role="img"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
+              <a href="/" class="button--success" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
               <button class="button--success" type="button" disabled>Button Disabled</button>
               <a href="/" class="button--success button--disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
 
@@ -252,16 +252,27 @@ $posts = array(
         </div>
       </article>
 
-      <section>
+      <section class="component">
         <div class="content">
           <div class="content__row">
             <div class="inner">
               <div class="inner__row">
                 <?php foreach($posts as $post) { ?>
                 <article class="item">
-                  <h4><?php echo $post['title'] ?></h4>
-                  <p><?php echo $post['content'] ?></p>
-                  <button class="button--outlined" type="button">Learn more</button>
+                  <div class="item__body">
+                    <div class="item__media">
+                      <figure style="background-image: url('<?php echo $post['media'] ?>')">
+                        <img src="<?php echo $post['media'] ?>" alt="<?php echo $post['title'] ?>">
+                      </figure>
+                    </div>
+                    <div class="item__text">
+                      <h4><?php echo $post['title'] ?></h4>
+                      <p><?php echo $post['content'] ?></p>
+                    </div>
+                    <div class="item__footer">
+                      <button class="button--outlined" type="button">Learn more</button>
+                    </div>
+                  </div> 
                 </article>
                 <?php } ?>
               </div>

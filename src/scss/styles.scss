@@ -1,5 +1,5 @@
 /*!
-  Theme Name: Bright and White Dental
+  Theme Name: DDL THEME
   Author: Dental Design
   Author URI: https://dental-design.marketing/
 */
@@ -14,7 +14,7 @@
 @import "mixins/flexbox";
 @import "mixins/media";
 @import "mixins/grid";
-// @import "mixins/block";
+@import "mixins/block";
 // @import "mixins/lists";
 
 // @import "utility/elfsight";
@@ -30,31 +30,9 @@
 // @import "partials/forms";
 
 // @import "layout/header";
+// @import "layout/main";
 // @import "layout/footer";
-// @import "layout/view";
-// @import "layout/block";
 
 @import "layout/templates";
 
-// @import "components/title";
-// @import "components/navigation";
-// @import "components/action";
-// @import "components/location";
-// @import "components/team";
-// @import "components/member";
-// @import "components/news";
-// @import "components/post";
-// @import "components/pagination";
-// @import "components/membership";
-// @import "components/eco";
-// @import "components/virtual";
-// @import "components/treatments";
-// @import "components/hero";
-// @import "components/overview";
-// @import "components/service";
-// @import "components/testimonials";
-// @import "components/review";
-// @import "components/contact";
-// @import "components/intro";
-// @import "components/featured";
-// @import "components/shortcodes";
+@import "components/component";
