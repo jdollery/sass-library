@@ -6,22 +6,23 @@
 
 @charset "UTF-8";
 
-@import "mixins/properties";
-@import "mixins/states";
-@import "mixins/animation";
-@import "mixins/flexbox";
-@import "mixins/media";
-@import "mixins/grid";
-@import "mixins/block";
+@import "abstracts/properties";
+@import "abstracts/states";
+@import "abstracts/animation";
+@import "abstracts/flexbox";
+@import "abstracts/media";
+@import "abstracts/grid";
+@import "abstracts/block";
 
 @import "partials/reset";
 @import "partials/paragraph";
 @import "partials/headings";
 @import "partials/links";
 @import "partials/lists";
+@import "partials/divider";
+@import "partials/image";
 // @import "partials/button";
 // @import "partials/tables";
-@import "partials/image";
 // @import "partials/forms";
 
 // @import "layout/header";

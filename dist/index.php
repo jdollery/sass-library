@@ -136,10 +136,14 @@ $posts = array(
                 <li>Posuere cubilia curae</li>
               </ul>
 
+              <hr>
+
               <ol class="list-number">
                 <li>Consectetur adipiscing elit</li>
                 <li>Posuere cubilia curae</li>
               </ol>
+
+              <hr>
 
               <h3>Header 3</h3>
               <div class="table-responsive">
@@ -257,6 +261,9 @@ $posts = array(
           <div class="content__row">
             <div class="inner">
               <div class="inner__row">
+                <div class="title">
+                  <h3>Component Heading</h3>
+                </div>
                 <?php foreach($posts as $post) { ?>
                 <article class="item">
                   <div class="item__body">
@@ -266,7 +273,7 @@ $posts = array(
                       </figure>
                     </div>
                     <div class="item__text">
-                      <h4><?php echo $post['title'] ?></h4>
+                      <h4 class="item__title"><?php echo $post['title'] ?></h4>
                       <p><?php echo $post['content'] ?></p>
                     </div>
                     <div class="item__footer">
