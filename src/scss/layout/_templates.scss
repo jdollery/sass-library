@@ -34,9 +34,9 @@
 
 /* --------- ITEM (USED FOR A LOOP OF POSTS, SERVICES ETC...) --------- */
 
-$item-padding-top: 40px;
+$item-padding-top: 30px;
 $item-padding-bottom: 130px;
-$item-padding-x: 40px;
+$item-padding-x: $item-padding-top;
 $item-background: $color-white;
 
 .item {

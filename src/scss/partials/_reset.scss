@@ -1,3 +1,61 @@
+/*-----------------------------------------------------------------------------------*/
+/* COLOR VARIABLES */
+/*-----------------------------------------------------------------------------------*/
+
+$color-white:         #fefefe;
+$color-grey-100:      #f8f9fa;
+$color-grey-200:      #e9ecef;
+$color-grey-300:      #dee2e6;
+$color-grey-400:      #ced4da;
+$color-grey-500:      #8c8c8c;
+$color-grey-600:      #6c757d;
+$color-grey-700:      #495057;
+$color-grey-800:      #343a40;
+$color-grey-900:      #212529; 
+$color-black:         #0C090C;
+
+$color-brand:         #6929c4;
+$color-danger:        #dc3545;
+$color-warning:       #f2ab10;
+$color-success:       #42be65;
+
+
+/*-----------------------------------------------------------------------------------*/
+/* TEXT VARIABLES */
+/*-----------------------------------------------------------------------------------*/
+
+/* --------------------- FONT WEIGHTS --------------------- */
+
+$weight-thin:       100;
+$weight-light:      300;
+$weight-regular:    400;
+$weight-medium:     500;
+$weight-semibold:   600;
+$weight-bold:       700;
+$weight-extrabold:  800;
+$weight-black:      900;
+
+
+/* --------- FONT FAMILIES --------- */
+
+$roboto: 'Roboto', arial, sans-serif;
+// $fontawesome: 'FontAwesome';
+
+
+/* --------- BODY VARIABLES --------- */
+
+$body-font:           arial, sans-serif;
+$body-font-size:      17px;
+$body-line-height:    1.6;
+$body-font-weight:    $weight-regular;
+$body-color:          $color-grey-900;
+$body-background:     $color-grey-100;
+
+
+/*-----------------------------------------------------------------------------------*/
+/* RESET BROWSER STYLES */
+/*-----------------------------------------------------------------------------------*/
+
 *,
 *:after,
 *:before {

@@ -6,8 +6,6 @@
 
 @charset "UTF-8";
 
-@import "abstracts/variables";
-
 @import "mixins/properties";
 @import "mixins/states";
 @import "mixins/animation";
@@ -16,8 +14,6 @@
 @import "mixins/grid";
 @import "mixins/block";
 // @import "mixins/lists";
-
-// @import "utility/elfsight";
 
 @import "partials/reset";
 // @import "partials/paragraph";
