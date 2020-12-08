@@ -262,7 +262,8 @@ $posts = array(
             <div class="inner">
               <div class="inner__row">
                 <div class="title">
-                  <h3>Component Heading</h3>
+                  <h3 class="title__heading">Component Heading</h3>
+                  <p class="title__subheading">In non maximus nibh. Aenean interdum faucibus nunc a ultricies. Integer ornare sapien quis nunc accumsan scelerisque. Morbi eu turpis id nibh sagittis efficitur.</p>
                 </div>
                 <?php foreach($posts as $post) { ?>
                 <article class="item">

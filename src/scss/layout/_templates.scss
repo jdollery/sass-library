@@ -32,11 +32,22 @@
 }
 
 
-/* --------- TITLE (XXXXX) --------- */
+/* --------- TITLE (USED FOR COMPONANT HEADINGS) --------- */
 
 .title {
   @include cell;
   @include cell-span(12);
+  padding-bottom: 40px;
+
+  &__heading {
+    @include h2;
+  }
+
+  &__subheading {
+    @include h4;
+    margin-top: 20px;
+  }
+
 }
 
 

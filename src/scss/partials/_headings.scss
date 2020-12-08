@@ -16,9 +16,87 @@ $heading-margin-bottom-sm:   10px;
 $heading-1-size:             50px;
 $heading-2-size:             40px;
 $heading-3-size:             28px;
-$heading-4-size:             25px;
+$heading-4-size:             23px;
 $heading-5-size:             20px;
-$heading-6-size:             $heading-font;
+
+
+/*-----------------------------------------------------------------------------------*/
+/* MIXINS */
+/*-----------------------------------------------------------------------------------*/
+
+@mixin h1 {
+  font-size: $heading-1-size - 15;
+
+  @include media-up(sm) {
+    font-size: $heading-1-size - 10;
+  }
+
+  @include media-up(lg) {
+    font-size: $heading-1-size;
+  }
+
+}
+
+@mixin h2 {
+  font-size: $heading-2-size - 11;
+
+  @include media-up(sm) {
+    font-size: $heading-2-size - 6;
+  }
+
+  @include media-up(lg) {
+    font-size: $heading-2-size;
+  }
+
+}
+
+@mixin h3 {
+  font-size: $heading-3-size - 4;
+
+  @include media-up(sm) {
+    font-size: $heading-3-size - 2;
+  }
+
+  @include media-up(lg) {
+    font-size: $heading-3-size;
+  }
+
+}
+
+@mixin h4 {
+  font-size: $heading-4-size - 3;
+
+  @include media-up(sm) {
+    font-size: $heading-4-size - 1;
+  }
+
+  @include media-up(lg) {
+    font-size: $heading-4-size;
+  }
+
+}
+
+@mixin h5 {
+  font-size: $heading-5-size - 3;
+
+  @include media-up(sm) {
+    font-size: $heading-5-size - 1;
+  }
+
+  @include media-up(lg) {
+    font-size: $heading-5-size;
+  }
+
+}
+
+@mixin h6 {
+  font-size: $body-size-sm;
+
+  @include media-up(sm) {
+    font-size: $body-size-lg;
+  }
+
+}
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -52,25 +130,25 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 { 
-  font-size: $heading-1-size;
+  @include h1;
 }
 
 h2, .h2 { 
-  font-size: $heading-2-size;
+  @include h2;
 }
 
 h3, .h3 { 
-  font-size: $heading-3-size;
+  @include h3;
 }
 
 h4, .h4 { 
-  font-size: $heading-4-size;
+  @include h4;
 }
 
 h5, .h5 { 
-  font-size: $heading-5-size;
+  @include h5;
 }
 
 h6, .h6 { 
-  font-size: $heading-6-size;
+  @include h6;
 }
