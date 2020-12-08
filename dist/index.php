@@ -95,7 +95,7 @@ $posts = array(
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <header class="header">Header</header>
+    <Heading class="Heading">Heading</Heading>
     <main>
 
       <article>
@@ -103,33 +103,33 @@ $posts = array(
           <div class="content__row">
             <div class="inner">
 
-              <h1>Header 1</h1>
+              <h1>Heading 1</h1>
               <p>Lorem ipsum dolor sit amet, <a href="/">consectetur adipiscing elit</a>. In non maximus nibh. Aenean interdum faucibus nunc a ultricies. Integer ornare sapien quis nunc accumsan scelerisque. Morbi eu turpis id nibh sagittis efficitur.</p>
               <p>Consectetur adipiscing elit</a>. In non maximus nibh. Aenean interdum faucibus nunc a ultricies. Integer ornare sapien quis nunc accumsan scelerisque. Morbi eu turpis id nibh sagittis efficitur.</p>
 
-              <h2>Header 2</h2>
+              <h2>Heading 2</h2>
               <p>Lorem ipsum dolor sit amet, <a href="/">consectetur adipiscing elit</a>. In non maximus nibh. Aenean interdum faucibus nunc a ultricies. Integer ornare sapien quis nunc accumsan scelerisque. Morbi eu turpis id nibh sagittis efficitur.</p>
               <p>Consectetur adipiscing elit</a>. In non maximus nibh. Aenean interdum faucibus nunc a ultricies. Integer ornare sapien quis nunc accumsan scelerisque. Morbi eu turpis id nibh sagittis efficitur.</p>
 
-              <h3>Header 3</h3>
+              <h3>Heading 3</h3>
               <p>Lorem ipsum dolor sit amet, <a href="/">consectetur adipiscing elit</a>. In non maximus nibh. Aenean interdum faucibus nunc a ultricies. Integer ornare sapien quis nunc accumsan scelerisque. Morbi eu turpis id nibh sagittis efficitur.</p>
               <p>Consectetur adipiscing elit</a>. In non maximus nibh. Aenean interdum faucibus nunc a ultricies. Integer ornare sapien quis nunc accumsan scelerisque. Morbi eu turpis id nibh sagittis efficitur.</p>
 
-              <h4>Header 4</h4>
+              <h4>Heading 4</h4>
               <p>Lorem ipsum dolor sit amet, <a href="/">consectetur adipiscing elit</a>. In non maximus nibh. Aenean interdum faucibus nunc a ultricies. Integer ornare sapien quis nunc accumsan scelerisque. Morbi eu turpis id nibh sagittis efficitur.</p>
               <p>Consectetur adipiscing elit</a>. In non maximus nibh. Aenean interdum faucibus nunc a ultricies. Integer ornare sapien quis nunc accumsan scelerisque. Morbi eu turpis id nibh sagittis efficitur.</p>
 
-              <h5>Header 5</h5>
+              <h5>Heading 5</h5>
               <p>Lorem ipsum dolor sit amet, <a href="/">consectetur adipiscing elit</a>. In non maximus nibh. Aenean interdum faucibus nunc a ultricies. Integer ornare sapien quis nunc accumsan scelerisque. Morbi eu turpis id nibh sagittis efficitur.</p>
               <p>Consectetur adipiscing elit</a>. In non maximus nibh. Aenean interdum faucibus nunc a ultricies. Integer ornare sapien quis nunc accumsan scelerisque. Morbi eu turpis id nibh sagittis efficitur.</p>
               <img src="https://via.placeholder.com/1920x1080">
               <p>Consectetur adipiscing elit</a>. In non maximus nibh. Aenean interdum faucibus nunc a ultricies. Integer ornare sapien quis nunc accumsan scelerisque. Morbi eu turpis id nibh sagittis efficitur.</p>
 
-              <h6>Header 6</h6>
+              <h6>Heading 6</h6>
               <p>Lorem ipsum dolor sit amet, <a href="/">consectetur adipiscing elit</a>. In non maximus nibh. Aenean interdum faucibus nunc a ultricies. Integer ornare sapien quis nunc accumsan scelerisque. Morbi eu turpis id nibh sagittis efficitur.</p>
               <p>Consectetur adipiscing elit</a>. In non maximus nibh. Aenean interdum faucibus nunc a ultricies. Integer ornare sapien quis nunc accumsan scelerisque. Morbi eu turpis id nibh sagittis efficitur.</p>
 
-              <h4>Header 4</h4>
+              <h4>Heading 4</h4>
               <ul class="list-bullet">
                 <li>Consectetur adipiscing elit</li>
                 <li>Posuere cubilia curae</li>
@@ -144,7 +144,7 @@ $posts = array(
 
               <hr>
 
-              <h3>Header 3</h3>
+              <h3>Heading 3</h3>
               <div class="table-responsive">
                 <table>
                   <caption>A sample table</caption>
@@ -158,18 +158,18 @@ $posts = array(
                   <tbody>
                     <tr>
                       <th scope="row" data-title="#">1</th>
-                      <td headers="head1" data-title="Test head">Test content</td>
-                      <td headers="head2" data-title="Test head">Test content</td>
+                      <td Headings="head1" data-title="Test head">Test content</td>
+                      <td Headings="head2" data-title="Test head">Test content</td>
                     </tr>
                     <tr>
                       <th scope="row" data-title="#">2</th>
-                      <td headers="head1" data-title="Test head">Test content</td>
-                      <td headers="head2" data-title="Test head">Test content</td>
+                      <td Headings="head1" data-title="Test head">Test content</td>
+                      <td Headings="head2" data-title="Test head">Test content</td>
                     </tr>
                     <tr>
                       <th scope="row" data-title="#">3</th>
-                      <td headers="head1" data-title="Test head">Test content</td>
-                      <td headers="head2" data-title="Test head">Test content</td>
+                      <td Headings="head1" data-title="Test head">Test content</td>
+                      <td Headings="head2" data-title="Test head">Test content</td>
                     </tr>
                   </tbody>
                 </table>
