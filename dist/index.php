@@ -182,25 +182,32 @@ $posts = array(
                 <a href="https://pulse.heartbeat.ua/" target="_blank">https://pulse.heartbeat.ua/</a>
               </p>
 
-              <button class="button--outlined" type="button">Button</button>
-              <a href="/" class="button--outlined" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
-              <button class="button--outlined" type="button" disabled>Button Disabled</button>
-              <a href="/" class="button--outlined button--disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
+              <button class="button-primary" type="button">Button</button>
+              <a href="/" class="button-primary" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
+              <button class="button-primary" type="button" disabled>Button Disabled</button>
+              <a href="/" class="button-primary disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
 
-              <button class="button--filled" type="button">Button</button>
-              <a href="/" class="button--filled" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
-              <button class="button--filled" type="button" disabled>Button Disabled</button>
-              <a href="/" class="button--filled button--disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
+              <button class="button-secondary" type="button">Button</button>
+              <a href="/" class="button-secondary" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
+              <button class="button-secondary" type="button" disabled>Button Disabled</button>
+              <a href="/" class="button-secondary disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
 
-              <button class="button--danger" type="button">Button</button>
-              <a href="/" class="button--danger" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
-              <button class="button--danger" type="button" disabled>Button Disabled</button>
-              <a href="/" class="button--danger button--disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
+              <button class="button-danger" type="button">Button</button>
+              <a href="/" class="button-danger" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
+              <button class="button-danger" type="button" disabled>Button Disabled</button>
+              <a href="/" class="button-danger disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
 
-              <button class="button--success" type="button">Button</button>
-              <a href="/" class="button--success" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
-              <button class="button--success" type="button" disabled>Button Disabled</button>
-              <a href="/" class="button--success button--disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
+              <button class="button-warning" type="button">Button</button>
+              <a href="/" class="button-warning" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
+              <button class="button-warning" type="button" disabled>Button Disabled</button>
+              <a href="/" class="button-warning disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
+
+              <button class="button-success" type="button">Button</button>
+              <a href="/" class="button-success" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
+              <button class="button-success" type="button" disabled>Button Disabled</button>
+              <a href="/" class="button-success disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
+
+              <button class="button-link" type="button">Button as a link</button>
 
               <form class="form">
                 <fieldset>
@@ -243,7 +250,7 @@ $posts = array(
                   <input
                       type="submit"
                       id="inputSubmit"
-                      class="button--filled"
+                      class="button-secondary"
                       name="inputSubmit"
                       value="Submit"
                     />
@@ -277,7 +284,7 @@ $posts = array(
                       <p><?php echo $post['content'] ?></p>
                     </div>
                     <div class="item__footer">
-                      <button class="button--outlined" type="button">Learn more</button>
+                      <button class="button-primary" type="button">Learn more</button>
                     </div>
                   </div> 
                 </article>
