@@ -183,27 +183,27 @@ $posts = array(
               </p>
 
               <button class="button-primary" type="button">Button</button>
-              <a href="/" class="button-primary" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
+              <a href="/" class="button-primary" role="button"><span class="icon icon--left"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
               <button class="button-primary" type="button" disabled>Button Disabled</button>
               <a href="/" class="button-primary disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
 
               <button class="button-secondary" type="button">Button</button>
-              <a href="/" class="button-secondary" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
+              <a href="/" class="button-secondary" role="button"><span class="icon icon--left"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
               <button class="button-secondary" type="button" disabled>Button Disabled</button>
               <a href="/" class="button-secondary disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
 
               <button class="button-danger" type="button">Button</button>
-              <a href="/" class="button-danger" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
+              <a href="/" class="button-danger" role="button"><span class="icon icon--left"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
               <button class="button-danger" type="button" disabled>Button Disabled</button>
               <a href="/" class="button-danger disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
 
               <button class="button-warning" type="button">Button</button>
-              <a href="/" class="button-warning" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
+              <a href="/" class="button-warning" role="button"><span class="icon icon--left"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
               <button class="button-warning" type="button" disabled>Button Disabled</button>
               <a href="/" class="button-warning disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
 
               <button class="button-success" type="button">Button</button>
-              <a href="/" class="button-success" role="button"><span class="icon"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span> Link Button</a>
+              <a href="/" class="button-success" role="button">Link Button <span class="icon icon--right"><svg role="media"><use xlink:href="#iconLink" href="#iconLink"></use></svg></span></a>
               <button class="button-success" type="button" disabled>Button Disabled</button>
               <a href="/" class="button-success disabled" role="button" aria-disabled="true" tabindex="-1">Link Button Disabled</a>
 
@@ -221,7 +221,7 @@ $posts = array(
                       required
                       aria-describedby="inputOneHelp"
                     />
-                    <small id="inputOneHelp" class="form__input__help">We'll never share your email with anyone else.</small>
+                    <small id="inputOneHelp" class="form__help">We'll never share your email with anyone else.</small>
                   </div>
                   <div class="form__input">
                     <label for="inputReadonly">Input Read only</label>
@@ -231,6 +231,7 @@ $posts = array(
                       name="inputReadonly"
                       placeholder="Read only"
                       readonly
+                      disabled
                     />
                   </div>
                   <div class="form__input">
@@ -246,6 +247,10 @@ $posts = array(
                   <div class="form__input">
                     <label for="inputOne">Textarea</label>
                     <textarea id="inputTextarea" rows="3"></textarea>
+                  </div>
+
+                  <div class="form__note">
+                    <i class="fas fa-lock text-secondary"></i>&nbsp;&nbsp;On submitting your enquiry you agree to our <a href="https://dev.dental-design-clients.co.uk/brightandwhitedental/privacy-policy/" target="_blank">privacy policy</a> and consent to the collection of personal data. All personal data submitted via this form will be stored and used in line with the General Data Protection Regulation (GDPR).
                   </div>
                   <input
                       type="submit"

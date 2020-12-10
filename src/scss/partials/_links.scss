@@ -69,7 +69,8 @@ a:not([class]) {
 }
 
 a:focus,
-button:focus {
+button:focus,
+input[type="submit"]:focus {
 	outline: $link-focus-outline;
   text-decoration: none;
 }

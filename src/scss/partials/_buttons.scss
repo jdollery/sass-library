@@ -147,7 +147,14 @@ $button-danger-border-color-disabled:      $button-disabled-color;
     height: 10px;
     vertical-align: baseline;
     position: relative;
-    margin-right: 4px;
+    
+    &--left {
+      margin-right: 4px;
+    }
+
+    &--right {
+      margin-left: 4px;
+    }
 
     @include media-up(sm) {
       width: 13px;
@@ -520,28 +527,6 @@ $button-danger-border-color-disabled:      $button-disabled-color;
     background: transparent;
     border: none;
   }
-
-  // &:disabled, &.disabled {
-  //   color: $button-secondary-color-disabled;
-  //   background: $button-secondary-background-disabled;
-  //   border-color: $button-secondary-border-color-disabled;
-
-  //   @include hover-focus {
-  //     color: $button-secondary-color-disabled;
-  //     background: $button-secondary-background-disabled;
-  //     border-color: $button-secondary-border-color-disabled;
-  
-  //     .icon {
-        
-  //       svg {
-  //         fill: $button-secondary-color-disabled;
-  //       }
-    
-  //     }
-  
-  //   }
-    
-  // }
 
 }
 
