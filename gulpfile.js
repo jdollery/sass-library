@@ -12,7 +12,7 @@ const paths = {
   scripts: {
     src: [
       // './base/assets/js/jquery.js',
-      // './base/assets/js/navigation.js',
+      './src/js/navigation.js',
       './src/js/validate.js',
       './src/js/script.js'
     ],
