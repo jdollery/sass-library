@@ -1,3 +1,7 @@
+/*-----------------------------------------------------------------------------------*/
+/* MIXINS */
+/*-----------------------------------------------------------------------------------*/
+
 @mixin font-face($font-family, $folder, $name) {
 
   @font-face {
@@ -184,18 +188,8 @@
   
 }
 
+/*-----------------------------------------------------------------------------------*/
+/* STYLING */
+/*-----------------------------------------------------------------------------------*/
+
 @include font-face(SourceSansPro, sourcesans, SourceSans);
-
-
-// @font-face {
-//   font-family: 'Maax';
-//   src: url('../assets/fonts/maax/Maax-RegularMono.eot');
-//   src: url('../assets/fonts/maax/Maax-RegularMono.eot?#iefix') format('embedded-opentype'),
-//        url('../assets/fonts/maax/Maax-RegularMono.woff') format('woff'),
-//        url('../assets/fonts/maax/Maax-RegularMono.ttf') format('truetype'),
-//        url('../assets/fonts/maax/Maax-RegularMono.svg#Maax-RegularMono') format('svg');
-//   font-weight: 400;
-//   font-style: normal;
-//   font-stretch: normal;
-//   unicode-range: U+0020-2074;
-// }

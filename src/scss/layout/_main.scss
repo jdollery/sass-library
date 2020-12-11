@@ -1,0 +1,10 @@
+.main {
+  background: $color-white;
+  overflow-x: hidden;
+  padding-top: 100px; //height of the header
+
+  // @include media-up(xl) {
+  //   padding-top: 107px;
+  // }
+
+}

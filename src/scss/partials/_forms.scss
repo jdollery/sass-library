@@ -44,6 +44,8 @@ $input-padding-right-sm:         $button-padding-right-sm;
 $input-padding-bottom-sm:        $button-padding-bottom-sm;
 $input-padding-left-sm:          $button-padding-left-sm;
 
+$input-small-size:               12px;
+
 
 /*-----------------------------------------------------------------------------------*/
 /* STYLING */
@@ -115,7 +117,7 @@ form {
 
   &__help {
     display: block;
-    font-size: 12px;
+    font-size: $input-small-size;
     color: $color-grey-600;
     margin-top: 10px;
   }
@@ -319,6 +321,22 @@ select {
 
   &.error {
     border-color: $color-danger;
+  }
+
+}
+
+.error-message {
+  display: block;
+  font-size: $input-small-size;
+  color: $color-danger;
+  margin-top: 10px;
+
+  &::before {
+    display: inline-block;
+    font-family: $font-fontawesome;
+    font-weight: 900;
+    content: "\f071";
+    margin-right: 8px;
   }
 
 }

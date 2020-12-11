@@ -13,8 +13,10 @@
 @import "abstracts/media";
 @import "abstracts/grid";
 @import "abstracts/block";
+@import "abstracts/hidden";
 
 @import "utility/fonts";
+@import "utility/fontawesome";
 
 @import "partials/reset";
 @import "partials/paragraph";
@@ -27,10 +29,10 @@
 @import "partials/tables";
 @import "partials/forms";
 
-// @import "layout/header";
-// @import "layout/main";
+@import "layout/header";
+@import "layout/main";
 // @import "layout/footer";
-
 @import "layout/templates";
 
+@import "components/navigation";
 @import "components/component";

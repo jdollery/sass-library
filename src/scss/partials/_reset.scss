@@ -24,18 +24,17 @@ $color-success:       #3caa5a;
 /* --------- FONT FAMILIES --------- */
 
 $font-sourcesans: 'SourceSans', arial, sans-serif;
-// $fontawesome: 'FontAwesome';
-
+$font-fontawesome: 'Font Awesome';
 
 /* --------- BODY VARIABLES --------- */
 
-$body-font:           arial, sans-serif;
+$body-font:           $font-sourcesans;
 $body-size-lg:        17px;
 $body-size-sm:        15px;
 $body-line-height:    1.6;
 $body-weight:         400;
 $body-color:          $color-grey-900;
-$body-background:     $color-grey-100;
+$body-background:     $color-grey-100; // background of footer so it bleeds off the bottom (main.scss for content background)
 
 
 /*-----------------------------------------------------------------------------------*/

@@ -1,0 +1,46 @@
+/*-----------------------------------------------------------------------------------*/
+/* STYLING */
+/*-----------------------------------------------------------------------------------*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  z-index: 9999;
+  width: 100%;
+  background: $color-brand;
+  color: $color-white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__content{
+    @include cell-fixed;
+  }
+
+  &__row {
+    @include cell-row;
+    @include flex-items(center);
+    @include flex-content-x(space-between);  
+  }
+
+  &__left {
+    @include cell;
+    @include cell-span(auto);
+    text-align: left;
+  }
+
+  &__center {
+    @include cell;
+    @include cell-span(0);
+    text-align: center;
+  }
+
+  &__right {
+    @include cell;
+    @include cell-span(auto);
+    text-align: right;
+  }
+
+}

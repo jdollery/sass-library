@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-// const concat = require('gulp-concat');
-// const uglify = require('gulp-uglify');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
 
 
 const paths = {
@@ -9,15 +9,15 @@ const paths = {
     src: './src/scss/**/*.scss',
     dest: './dist'
   },
-  // scripts: {
-  //   src: [
-  //     './base/assets/js/jquery.js',
-  //     './base/assets/js/navigation.js',
-  //     './base/assets/js/validate.js',
-  //     './base/assets/js/script.js'
-  //   ],
-  //   dest: './base'
-  // }
+  scripts: {
+    src: [
+      // './base/assets/js/jquery.js',
+      // './base/assets/js/navigation.js',
+      './src/js/validate.js',
+      './src/js/script.js'
+    ],
+    dest: './dist'
+  }
 };
 
 	
@@ -31,20 +31,20 @@ function css() {
 exports.css = css;
 
 
-// function js() {
-//   return gulp
-//   .src(paths.scripts.src)
-//   .pipe(concat('script.js'))
-//   .pipe(uglify())
-//   .pipe(gulp.dest(paths.scripts.dest))
-// }
+function js() {
+  return gulp
+  .src(paths.scripts.src)
+  .pipe(concat('script.js'))
+  .pipe(uglify())
+  .pipe(gulp.dest(paths.scripts.dest))
+}
 
-// exports.js = js;
+exports.js = js;
 
 
 function watch() {
   gulp.watch(paths.styles.src, css);
-  // gulp.watch(paths.scripts.src, js);
+  gulp.watch(paths.scripts.src, js);
 }
 	
 exports.watch = watch;
