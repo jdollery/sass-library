@@ -108,12 +108,23 @@ $posts = array(
             <h4 id="primaryNavigation" class="sr-only">Primary navigation</h4>
             <ul class="navigation" id="headerNav" aria-labelledby="primaryNavigation">
               <li class="navlink"><a href="#">Home</a></li>
-              <li class="navlink"><a href="#">About</a></li>
+              <li class="navlink"><a href="#">About</a>
+                <ul class="sub-menu">
+                  <li class="navlink"><a href="#">Home</a></li>
+                  <li class="navlink"><a href="#">About</a></li>
+                  <li class="navlink"><a href="#">Projects</a></li>
+                  <li class="navlink"><a href="#">Contact</a></li>
+                </ul>
+              </li>
               <li class="navlink"><a href="#">Projects</a></li>
               <li class="navlink"><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div class="header__right">Right</div>
+          <div class="header__right">
+            <button class="burger" id="navToggle" type="button" title="Main menu">
+              <div class="burger__inner"></div>
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -230,7 +241,7 @@ $posts = array(
 
               <button class="button-link" type="button">Button as a link</button>
 
-              <form class="form validate">
+              <form class="form" id="validateForm" novalidate="true">
                 <fieldset>
                   <div class="form__input">
                     <label for="inputOne">Input cell</label>

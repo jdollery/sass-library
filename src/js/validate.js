@@ -325,11 +325,11 @@
 
 
   // Add the novalidate attribute when the JS loads
-  var forms = document.querySelectorAll('.validate');
-  for (var i = 0; i < forms.length; i++) {
-  forms[i].setAttribute('novalidate', true);
-  }
+  var forms = document.getElementById('validateForm');
 
+//   for (var i = 0; i < forms.length; i++) {
+//     forms[i].setAttribute('novalidate', true);
+//   }
 
   // Validate the field
   var hasError = function (field) {
@@ -488,55 +488,56 @@
 
 
   // Listen to all blur events
-  document.addEventListener('blur', function (event) {
+  var validate = document.getElementById('validateForm');
+  validate.addEventListener('blur', function (event) {
 
-  // Only run if the field is in a form to be validated
-  if (!event.target.form.classList.contains('validate')) return;
+    // Only run if the field is in a form to be validated
+    // if (!event.target.form.classList.contains('validate')) return;
 
-  // Validate the field
-  var error = hasError(event.target);
+    // Validate the field
+    var error = hasError(event.target);
 
-  // If there's an error, show it
-  if (error) {
-      showError(event.target, error);
-      return;
-  }
+    // If there's an error, show it
+    if (error) {
+        showError(event.target, error);
+        return;
+    }
 
-  // Otherwise, remove any existing error message
-  removeError(event.target);
+    // Otherwise, remove any existing error message
+    removeError(event.target);
 
   }, true);
 
 
   // Check all fields on submit
-  document.addEventListener('submit', function (event) {
+  validate.addEventListener('submit', function (event) {
 
-  // Only run on forms flagged for validation
-  if (!event.target.classList.contains('validate')) return;
+    // Only run on forms flagged for validation
+    // if (!event.target.classList.contains('validate')) return;
 
-  // Get all of the form elements
-  var fields = event.target.elements;
+    // Get all of the form elements
+    var fields = event.target.elements;
 
-  // Validate each field
-  // Store the first field with an error to a variable so we can bring it into focus later
-  var error, hasErrors;
-  for (var i = 0; i < fields.length; i++) {
-      error = hasError(fields[i]);
-      if (error) {
-          showError(fields[i], error);
-          if (!hasErrors) {
-              hasErrors = fields[i];
-          }
-      }
-  }
+    // Validate each field
+    // Store the first field with an error to a variable so we can bring it into focus later
+    var error, hasErrors;
+    for (var i = 0; i < fields.length; i++) {
+        error = hasError(fields[i]);
+        if (error) {
+            showError(fields[i], error);
+            if (!hasErrors) {
+                hasErrors = fields[i];
+            }
+        }
+    }
 
-  // If there are errrors, don't submit form and focus on first element with error
-  if (hasErrors) {
-      event.preventDefault();
-      hasErrors.focus();
-  }
+    // If there are errrors, don't submit form and focus on first element with error
+    if (hasErrors) {
+        event.preventDefault();
+        hasErrors.focus();
+    }
 
-  // Otherwise, let the form submit normally
-  // You could also bolt in an Ajax form submit process here
+    // Otherwise, let the form submit normally
+    // You could also bolt in an Ajax form submit process here
 
   }, false);

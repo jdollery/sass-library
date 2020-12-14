@@ -25,6 +25,7 @@
 /*-----------------------------------------------------------------------------------*/
 
 .hidden {
+  display: none;
 
   &-xs {
     @include hidden(md);
@@ -62,8 +63,4 @@
     @include visable(lg);
   }
 
-}
-
-.sr-only {
-  display: none;
 }
