@@ -112,7 +112,14 @@ $posts = array(
                 <ul class="sub-menu">
                   <li class="navlink"><a href="#">Home</a></li>
                   <li class="navlink"><a href="#">About</a></li>
-                  <li class="navlink"><a href="#">Projects</a></li>
+                  <li class="navlink"><a href="#">Projects</a>
+                    <ul class="sub-menu">
+                      <li class="navlink"><a href="#">Home</a></li>
+                      <li class="navlink"><a href="#">About</a></li>
+                      <li class="navlink"><a href="#">Projects</a></li>
+                      <li class="navlink"><a href="#">Contact</a></li>
+                    </ul>
+                  </li>
                   <li class="navlink"><a href="#">Contact</a></li>
                 </ul>
               </li>

@@ -1,0 +1,431 @@
+/*-----------------------------------------------------------------------------------*/
+/* VARIABLES */
+/*-----------------------------------------------------------------------------------*/
+
+$nav-sub-link-padding-y-lg: 10px;
+$nav-sub-link-padding-x-lg: 10px;
+
+$nav-sub-link-padding-y-sm: 10px;
+$nav-sub-link-padding-x-sm: 10px;
+
+
+/*-----------------------------------------------------------------------------------*/
+/* STYLING */
+/*-----------------------------------------------------------------------------------*/
+
+/* --------- LARGE DEVICE --------- */
+
+@include media-up(sm) {
+
+  .navigation {
+    position: relative !important; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    > li {
+      position: relative;
+      padding: 10px 0;
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+
+      &:before,
+      .dropdown-toggle {
+        display: none;
+      }
+
+      &:hover > ul,
+      &:focus-within > ul {
+        visibility: visible;
+        display: block;
+      }
+
+      > a {
+        color: $color-grey-200;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 2px 4px;
+        @include transition(color 0.3s ease-out);
+
+        @include media-up(xl) {
+          font-size: 15px;
+        }
+
+        @include hover-focus {
+          color: $color-white;
+        }
+
+      }
+
+      &.menu-item-has-children {
+
+        > a::after {
+          display: inline-block;
+          margin-left: 7px;
+          font-family: $font-fontawesome;
+          font-style: normal;
+          line-height: 1;
+          font-weight: 900;
+          content: '\f107';
+          margin-left: 10px;
+          @include transition(all 0.3s ease-out);
+        }
+
+        &:hover,
+        &:focus-within {
+
+          > a {
+
+            &::after {
+              @include transform (rotate(180deg));
+            }
+
+          }
+
+        }
+
+      }
+
+      &.current-menu-item {
+
+        > a {
+          color: $color-black;
+
+          &::after {
+            color: $color-black;
+          }
+
+        }
+
+        &:hover,
+        &:focus-within {
+
+          > a {
+            color: $color-black;
+
+            &::after {
+              color: $color-black;
+            }
+
+          }
+
+        }
+
+      }
+
+      &.current-menu-parent {
+
+        > a {
+          color: $color-grey-700;
+        }
+
+      }
+
+      /* --- LEVEL TWO --- */
+
+      > ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        visibility: hidden;
+        width: 100%;
+        width: fit-content;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        z-index: 99999;
+
+        > li {
+          position: relative;
+          display: block;
+          height: auto;
+          width: 100%;
+          border: 0;
+          margin: 0;
+          padding: 0;
+          line-height: 1;
+
+          &:before {
+            display: none;
+          }
+
+          &:hover > ul,
+          &:focus-within > ul {
+            visibility: visible;
+            display: block;
+          }
+
+          > a {
+            display: block;
+            white-space: nowrap;
+            width: 100%;
+            min-width: 140px;
+            padding: $nav-sub-link-padding-y-lg $nav-sub-link-padding-x-lg;
+            font-weight: 400;
+            border-top: 0;
+            font-size: 13px;
+            line-height: 1.3;
+            color: $color-white;
+            background-color: $color-grey-500;
+            @include transition(all 0.3s ease-out);
+          }
+
+          &:not(:last-child) {
+            
+            > a {
+              border-bottom: 1px solid $color-grey-600;
+            }
+
+          }
+
+          &:hover,
+          &:focus-within {
+
+            > a {
+              color: $color-white;
+              background: $color-grey-600;
+              text-decoration: none;
+            }
+
+          }
+
+          &.menu-item-has-children {
+
+            > a::after {
+              display: inline-block;
+              font-family: $font-fontawesome;
+              font-style: normal;
+              line-height: 1;
+              font-weight: 900;
+              margin-left: 10px;
+              content: '\f105';
+              @include transition(all 0.3s ease-out);
+            }
+    
+          }
+
+          &.current-menu-item {
+
+            > a {
+              background: $color-black;
+            }
+
+            &:hover,
+            &:focus-within {
+
+              > a {
+                background: $color-black;
+              }
+
+            }
+
+          }
+
+          /* --- LEVEL THREE --- */
+
+          > ul {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            display: none;
+            visibility: hidden;
+            width: 100%;
+            width: fit-content;
+            text-align: left;
+            margin: 0 0 0 -1px;
+            padding: 0;
+            z-index: 99999;
+
+            > li {
+              position: relative;
+              display: block;
+              height: auto;
+              width: 100%;
+              border: 0;
+              margin: 0;
+              padding: 0;
+              line-height: 1;
+
+              &:before {
+                display: none;
+              }
+
+              > a {
+                display: block;
+                white-space: nowrap;
+                width: 100%;
+                min-width: 140px;
+                padding: $nav-sub-link-padding-y-lg $nav-sub-link-padding-x-lg;
+                font-weight: 400;
+                border-top: 0;
+                font-size: 13px;
+                line-height: 1.3;
+                color: $color-white;
+                background-color: $color-grey-600;
+                @include transition(color 0.3s ease-out);
+              }
+    
+              &:not(:last-child) {
+                
+                > a {
+                  border-bottom: 1px solid $color-grey-700;
+                }
+    
+              }
+    
+              &:hover,
+              &:focus-within {
+    
+                > a {
+                  color: $color-white;
+                  background-color: $color-grey-700;
+                  text-decoration: none;
+                }
+    
+              }
+    
+              &.current-menu-item {
+    
+                > a {
+                  background: $color-black;
+                }
+    
+                &:hover,
+                &:focus-within {
+    
+                  > a {
+                    background: $color-black;
+                  }
+    
+                }
+    
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+/* --------- SMALL DEVICE --------- */
+
+@include media-down(sm) {
+
+  .navigation { 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    > li {
+      padding: 15px 0;
+      display: block;
+
+      &:before {
+        display: none;
+      }
+
+      &:hover > ul,
+      &:focus-within > ul {
+        visibility: visible;
+        display: block;
+      }
+
+    }
+
+  }
+
+}
+
+
+/* --------- BURGER --------- */
+
+.burger {
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  height: 36px;
+  width: 41px;
+  padding: 0 6px 4px;
+
+  // @include media-up(sm) {
+  //   display: none;
+  // }
+
+  &__inner,
+  &__inner::after,
+  &__inner::before {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+    transition-property: transform;
+    background-color: #fff;
+  }
+
+  &__inner {
+    transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+    transition-duration: 75ms; 
+    
+    &::after,
+    &::before {
+      display: block;
+      content: "";
+    }
+
+    &::before {
+      top: -10px;
+      @include transition (top 75ms ease .12s,opacity 75ms ease);
+    }
+
+    &::after {
+      bottom: -10px;
+      @include transition (bottom 75ms ease .12s);
+      @include transform (75ms cubic-bezier(.55,.055,.675,.19));
+    }
+
+  }
+
+  &.active {
+
+    .burger {
+
+      &__inner {
+        @include transition-delay (.12s);
+        @include transition-timing-function (cubic-bezier(.215,.61,.355,1));
+        @include transform (rotate(45deg));
+
+        &::before {
+          top: 0;
+          opacity: 0;
+          @include transition (top 75ms ease,opacity 75ms ease .12s);
+        }
+
+        &::after {
+          bottom: 0;
+          @include transition (bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) .12s);
+          @include transform (rotate(-90deg));
+        }
+
+      }
+
+    }
+
+  }
+
+}
