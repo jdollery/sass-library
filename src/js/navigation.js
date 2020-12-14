@@ -439,7 +439,7 @@
           }
 
           this._createStyles();
-          this._calcHeight();
+          // this._calcHeight();
 		  opts.resizeMobile();
 
         } else {
@@ -751,22 +751,22 @@
        * Calculates the height of the navigation and then creates
        * styles which are later added to the page <head>
        */
-      _calcHeight: function () {
-        var savedHeight = 0;
-        for (var i = 0; i < nav.inner.length; i++) {
-          savedHeight += nav.inner[i].offsetHeight;
-        }
+      // _calcHeight: function () {
+      //   var savedHeight = 0;
+      //   for (var i = 0; i < nav.inner.length; i++) {
+      //     savedHeight += nav.inner[i].offsetHeight;
+      //   }
 
-        var innerStyles = "." + opts.jsClass + " ." + opts.navClass + "-" + this.index + ".opened{max-height:" + savedHeight + "px !important} ." + opts.jsClass + " ." + opts.navClass + "-" + this.index + ".opened.dropdown-active {max-height:9999px !important}";
+      //   var innerStyles = "." + opts.jsClass + " ." + opts.navClass + "-" + this.index + ".opened{max-height:" + savedHeight + "px !important} ." + opts.jsClass + " ." + opts.navClass + "-" + this.index + ".opened.dropdown-active {max-height:9999px !important}";
 
-        if (styleElement.styleSheet) {
-          styleElement.styleSheet.cssText = innerStyles;
-        } else {
-          styleElement.innerHTML = innerStyles;
-        }
+      //   if (styleElement.styleSheet) {
+      //     styleElement.styleSheet.cssText = innerStyles;
+      //   } else {
+      //     styleElement.innerHTML = innerStyles;
+      //   }
 
-        innerStyles = "";
-      },
+      //   innerStyles = "";
+      // },
 
       /**
        * Creates 'focus' class on nav elements
