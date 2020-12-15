@@ -334,7 +334,7 @@ $nav-media-size: md;
     position: fixed !important;
     right: -100%;
     width: 100%;
-    top: 69px; //Height of header
+    top: $header-height-sm; //variable in header.scss
     bottom: 0;
     z-index: 1000;
     background-color: $color-grey-900;
