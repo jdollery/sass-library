@@ -381,6 +381,7 @@ $nav-sub-link-padding-x-sm: 10px;
           display: block;
           font-size: 16px;
           font-weight: 400;
+          padding: 15px;
         }
 
         ul {
@@ -388,14 +389,6 @@ $nav-sub-link-padding-x-sm: 10px;
 
           &.toggled {
             display: block;
-          }
-
-          li {
-
-            a {
-              padding: 15px;
-            }
-
           }
 
         }
