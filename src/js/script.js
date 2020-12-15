@@ -15,20 +15,8 @@ window.onpageshow = function(event) {
 /* RESPONSIVE NAV */
 /*-----------------------------------------------------------------------------------*/
 
+jQuery('.navigation li').parent().find("ul").addClass('sub-menu');
 jQuery('.sub-menu').parent().addClass('menu-item-has-children');
-
-var parent = jQuery('.navigation .menu-item');
-
-parent.find('a').attr('aria-expanded', 'false');
-parent.find('.sub-menu').attr('aria-hidden', 'true');
-
-parent.find('a').hover(function(){
-  jQuery(this).attr('aria-expanded', 'true');
-  jQuery(this).next().attr('aria-hidden', 'false');
-},function(){
-  jQuery(this).attr('aria-expanded', 'false');
-  jQuery(this).next().attr('aria-hidden', 'true');
-});
 
 var customToggle = document.getElementById('navToggle');
 
@@ -46,11 +34,11 @@ var navigation = responsiveNav("#headerNav", {
   // },
   
   resizeMobile: function () {
-  customToggle.setAttribute( 'aria-controls', 'headerNav' );
+    customToggle.setAttribute( 'aria-controls', 'headerNav' );
   },
   
   resizeDesktop: function () {
-  customToggle.removeAttribute( 'aria-controls' );
+    customToggle.removeAttribute( 'aria-controls' );
   },
   
 });

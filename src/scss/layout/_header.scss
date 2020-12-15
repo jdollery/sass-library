@@ -12,8 +12,13 @@
   width: 100%;
   background: $color-brand;
   color: $color-white;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @include media-up(md) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
   &__content{
     @include cell-fixed;
