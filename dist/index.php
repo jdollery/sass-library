@@ -100,8 +100,7 @@ $posts = array(
         <div class="header__row">
           <div class="header__left">
             <a href="#" class="logo" title="Back to the home page">
-              <!-- <img class="logo__img" src="/assets/img/logo-wo.svg" role="img" alt="" width="190" height="71"> -->
-              Brand Logo
+              <img src="/assets/img/logo.svg" role="img" alt="Logo" width="170" height="42">
             </a>
           </div>
           <div class="header__center">
@@ -117,8 +116,14 @@ $posts = array(
       </div>
     </header>
     <main class="main">
+      <div class="banner" style="background-image: url('/assets/img/rio-arc-product-01.jpg')">
+        <div class="content">     
+          <h1 class="banner__title">Products</h1>
+          <h4 class="banner__subtitle">Smart, affordable and energy efficient. Find out more about our range of Rio Arc heaters.</h4>      
+        </div>
+      </div>
 
-      <article class="component">
+      <article>
         <div class="content">
           <div class="content__row">
             <div class="inner">

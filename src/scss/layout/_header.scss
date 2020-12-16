@@ -4,8 +4,8 @@
 
 /* --------- USED IN NAVIGATION AND MAIN --------- */
 
-$header-height-lg: 81px;
-$header-height-sm: 67px;
+$header-height-lg: 93px;
+$header-height-sm: 88px;
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -62,5 +62,23 @@ $header-height-sm: 67px;
   // &.sticky {
   //   @include box-shadow (0 0 20px -10px rgba($color-black,0.75));
   // }
+
+}
+
+
+/* --------- HEADER LOGO --------- */
+
+.logo {
+  display: inline-block;
+  width: 140px;
+  vertical-align: middle;
+
+  @include media-up(md) {
+    width: 150px;
+  }
+
+  @include media-up(lg) {
+    width: 170px;
+  }
 
 }
