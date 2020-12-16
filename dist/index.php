@@ -108,17 +108,17 @@ $posts = array(
             <?php include("inc/navigation.php"); ?>
           </div>
           <div class="header__right">
+            <button class="button-header" type="button">Contact Us</button>
             <button class="burger" id="navToggle" type="button" title="Main menu">
-              <div class="burger__inner"></div>
+              <span class="burger__inner"></span>
             </button>
-            <button class="button-white-outline" type="button">Contact Us</button>
           </div>
         </div>
       </div>
     </header>
     <main class="main">
 
-      <article>
+      <article class="component">
         <div class="content">
           <div class="content__row">
             <div class="inner">

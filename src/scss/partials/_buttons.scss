@@ -115,9 +115,6 @@ $button-danger-border-color-disabled:      $button-disabled-color;
 @mixin button {
   display: inline-block;
   cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  outline: none;
   text-align: center;
   vertical-align: middle;
   font-size: $button-font-sm;
@@ -507,9 +504,9 @@ $button-danger-border-color-disabled:      $button-disabled-color;
 }
 
 
-/* --------- BUTTON DANGER --------- */
+/* --------- BUTTON HEADER --------- */
 
-@mixin button-white-outline {
+@mixin button-header {
   @include button;
   color: $color-white;
   background: transparent;
@@ -623,6 +620,6 @@ $button-danger-border-color-disabled:      $button-disabled-color;
   @include button-link;
 }
 
-.button-white-outline {
-  @include button-white-outline;
+.button-header {
+  @include button-header;
 }

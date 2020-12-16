@@ -3,6 +3,7 @@
 /*-----------------------------------------------------------------------------------*/
 
 $nav-breakpoint: md;
+$nav-width-sm: 300px;
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -343,8 +344,8 @@ html {
 
   .navigation {
     position: fixed !important;
-    right: -100%;
-    width: 100%;
+    left: -$nav-width-sm;
+    width: $nav-width-sm;
     top: $header-height-sm; //variable in header.scss
     bottom: 0;
     z-index: 1000;
@@ -353,10 +354,10 @@ html {
     overflow-x: hidden;
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
-    @include transition (right 0.5s ease-out);
+    @include transition (left 0.3s ease-out);
 
     &.opened {
-      right: 0;
+      left: 0;
     }
 
     ul {
@@ -557,6 +558,7 @@ html {
   height: 36px;
   width: 41px;
   padding: 0 6px 4px;
+  vertical-align: middle;
 
   @include media-up($nav-breakpoint) {
     display: none;
@@ -566,6 +568,7 @@ html {
   &__inner::after,
   &__inner::before {
     position: absolute;
+    display: block;
     width: 30px;
     height: 4px;
     transition-timing-function: ease;

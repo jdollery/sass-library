@@ -1,4 +1,4 @@
-console.info('%cSite designed and developed by Dental Design - dental-design.marketing', 'color: black' );
+console.info('%cSite designed and developed by Dental Design - https://dental-design.marketing', 'color: black' );
 
 /*-----------------------------------------------------------------------------------*/
 /* FORCE PAGE RELOAD TO STOP SAFARI & EDGE PAGE CHACHE */
