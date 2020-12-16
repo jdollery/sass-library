@@ -24,6 +24,7 @@ $header-height-sm: 67px;
   color: $color-white;
   padding-top: 15px;
   padding-bottom: 15px;
+  // @include transition(box-shadow 0.3s ease-out);
 
   @include media-up(md) {
     padding-top: 15px;
@@ -57,5 +58,9 @@ $header-height-sm: 67px;
     @include cell-span(auto);
     text-align: right;
   }
+
+  // &.sticky {
+  //   @include box-shadow (0 0 20px -10px rgba($color-black,0.75));
+  // }
 
 }

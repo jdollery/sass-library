@@ -11,34 +11,57 @@ window.onpageshow = function(event) {
 };
 
 
-/*-----------------------------------------------------------------------------------*/
-/* RESPONSIVE NAV */
-/*-----------------------------------------------------------------------------------*/
+jQuery(document).ready(function () { //doc ready start
 
-jQuery('.navigation li').parent().find("ul").addClass('sub-menu');
-jQuery('.sub-menu').parent().addClass('menu-item-has-children');
+  /*-----------------------------------------------------------------------------------*/
+  /* STICKY NAV */
+  /*-----------------------------------------------------------------------------------*/
 
-var customToggle = document.getElementById('navToggle');
+  jQuery(function(){
+    setHeaderColour();
+    jQuery(window).scroll(setHeaderColour);
+  });
 
-var navigation = responsiveNav("#headerNav", {
-  customToggle: "#navToggle", // Selector: Specify the ID of a custom toggle
-  enableFocus: true,
-  enableDropdown: true,
-  openDropdown: '<span class="hidden">Open sub menu</span>',
-  closeDropdown: '<span class="hidden">Close sub menu</span>',
-  // open: function () {
-  //     customToggle.innerHTML = '<div class="burger__inner"></div><span class="hidden">Close menu</span>';
-  // },
-  // close: function () {
-  //     customToggle.innerHTML = '<div class="burger__inner"></div><span class="hidden">Open menu</span>';
-  // },
-  
-  resizeMobile: function () {
-    customToggle.setAttribute( 'aria-controls', 'headerNav' );
-  },
-  
-  resizeDesktop: function () {
-    customToggle.removeAttribute( 'aria-controls' );
-  },
-  
-});
+  function setHeaderColour() {
+    if (jQuery(window).scrollTop() > 1) {
+      jQuery('#mainHeader').addClass("sticky");
+    }
+    else{
+      jQuery('#mainHeader').removeClass("sticky");
+    }
+  }
+
+
+  /*-----------------------------------------------------------------------------------*/
+  /* RESPONSIVE NAV */
+  /*-----------------------------------------------------------------------------------*/
+
+  jQuery('.navigation li').parent().find("ul").addClass('sub-menu');
+  jQuery('.sub-menu').parent().addClass('menu-item-has-children');
+
+  var customToggle = document.getElementById('navToggle');
+
+  var navigation = responsiveNav("#headerNav", {
+    customToggle: "#navToggle", // Selector: Specify the ID of a custom toggle
+    enableFocus: true,
+    enableDropdown: true,
+    openDropdown: '<span class="hidden">Open sub menu</span>',
+    closeDropdown: '<span class="hidden">Close sub menu</span>',
+    // open: function () {
+    //     customToggle.innerHTML = '<div class="burger__inner"></div><span class="hidden">Close menu</span>';
+    // },
+    // close: function () {
+    //     customToggle.innerHTML = '<div class="burger__inner"></div><span class="hidden">Open menu</span>';
+    // },
+    
+    resizeMobile: function () {
+      customToggle.setAttribute( 'aria-controls', 'headerNav' );
+    },
+    
+    resizeDesktop: function () {
+      customToggle.removeAttribute( 'aria-controls' );
+    },
+    
+  });
+
+}); //doc ready end

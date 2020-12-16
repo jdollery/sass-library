@@ -95,7 +95,7 @@ $posts = array(
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="mainHeader">
       <div class="header__content">
         <div class="header__row">
           <div class="header__left">
@@ -104,14 +104,14 @@ $posts = array(
               Brand Logo
             </a>
           </div>
-          <!-- <div class="header__center">
-            
-          </div> -->
+          <div class="header__center">
+            <?php include("inc/navigation.php"); ?>
+          </div>
           <div class="header__right">
             <button class="burger" id="navToggle" type="button" title="Main menu">
               <div class="burger__inner"></div>
             </button>
-            <?php include("inc/navigation.php"); ?>
+            <button class="button-white-outline" type="button">Contact Us</button>
           </div>
         </div>
       </div>

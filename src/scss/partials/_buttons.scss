@@ -507,6 +507,70 @@ $button-danger-border-color-disabled:      $button-disabled-color;
 }
 
 
+/* --------- BUTTON DANGER --------- */
+
+@mixin button-white-outline {
+  @include button;
+  color: $color-white;
+  background: transparent;
+  border-color: $color-white;
+
+  .icon {
+      
+    svg {
+      fill: $color-white;
+    }
+
+  }
+
+  @include hover-focus {
+    color: $color-grey-900;
+    background: $color-white;
+    border-color: $color-white;
+
+    .icon {
+      
+      svg {
+        fill: $color-grey-900;
+      }
+  
+    }
+
+  }
+
+  &:disabled, &.disabled {
+    color: $button-danger-color-disabled;
+    background: transparent;
+    border-color: $button-danger-border-color-disabled;
+
+    .icon {
+      
+      svg {
+        fill: $button-danger-color-disabled;
+      }
+  
+    }
+
+    @include hover-focus {
+      color: $button-danger-color-disabled;
+      background: transparent;
+      border-color: $button-danger-border-color-disabled;
+  
+      .icon {
+        
+        svg {
+          fill: $button-danger-color-disabled;
+        }
+    
+      }
+  
+    }
+    
+  }
+
+}
+
+
 
 /* --------- BUTTON LINK --------- */
 
@@ -557,4 +621,8 @@ $button-danger-border-color-disabled:      $button-disabled-color;
 
 .button-link {
   @include button-link;
+}
+
+.button-white-outline {
+  @include button-white-outline;
 }
