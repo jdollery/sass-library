@@ -26,6 +26,22 @@ $header-height-sm: 88px;
   padding-bottom: 15px;
   // @include transition(box-shadow 0.3s ease-out);
 
+  a {
+    font-weight: 400;
+    color: $color-grey-200;
+    @include transition(all 0.3s ease-out);
+
+    @include hover-focus {
+      color: $color-white;
+    }
+
+    i {
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+
+  }
+
   @include media-up(md) {
     padding-top: 15px;
     padding-bottom: 15px;

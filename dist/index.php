@@ -107,6 +107,7 @@ $posts = array(
             <?php include("inc/navigation.php"); ?>
           </div>
           <div class="header__right">
+            <a href="#"><i class="fas fa-phone-alt"></i> 01234567891</a>
             <button class="button-header" type="button">Contact Us</button>
             <button class="burger" id="navToggle" type="button" title="Main menu">
               <span class="burger__inner"></span>
@@ -116,6 +117,7 @@ $posts = array(
       </div>
     </header>
     <main class="main">
+
       <div class="banner" style="background-image: url('/assets/img/rio-arc-product-01.jpg')">
         <div class="content">     
           <h1 class="banner__title">Products</h1>
@@ -123,7 +125,27 @@ $posts = array(
         </div>
       </div>
 
-      <article>
+      <div class="carousel">
+        <div id="homeCarousel">
+          <div class="slide" style="background-image: url('/assets/img/rio-arc-product-01.jpg')">
+            <div class="content">
+              <div class="content__row">
+                <div class="slide__inner">
+                  <h1 class="carousel__title">Smart, affordable and energy efficient</h1>
+                  <h4 class="carousel__subtitle">Smart, affordable and energy efficient. Find out more about our range of Rio Arc heaters.</h4>      
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide" style="background-image: url('/assets/img/rio-arc-product-01.jpg')">
+            <div class="content">
+              <h1 class="carousel__title">Lorem ipsum dolor sit amet</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <article class="intro">
         <div class="content">
           <div class="content__row">
             <div class="inner">

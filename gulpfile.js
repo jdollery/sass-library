@@ -14,6 +14,7 @@ const paths = {
       './src/js/jquery.js',
       './src/js/navigation.js',
       './src/js/validate.js',
+      './src/js/slick.js',
       './src/js/script.js'
     ],
     dest: './dist'
